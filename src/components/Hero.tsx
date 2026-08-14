@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useCallback, useMemo } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Download, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface GradientLayer {
@@ -30,6 +30,15 @@ const Hero = () => {
   const timeRef = useRef(0);
   const lastFrameTime = useRef(0);
   const isVisible = useRef(true);
+
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/Dhawal_Deshmukh_Resume.pdf';
+    link.download = 'Dhawal_Deshmukh_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   // Performance monitoring
   const performanceConfig = useMemo(() => ({
@@ -310,7 +319,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative py-20 md:py-32 min-h-screen flex items-center justify-center bg-black overflow-hidden" data-hero-section>
+    <section className="relative py-20 md:py-28 min-h-screen flex items-center justify-center bg-black overflow-hidden" data-hero-section>
       <canvas
         ref={canvasRef}
         className="absolute inset-0 pointer-events-none"
@@ -319,16 +328,62 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
+          {/* Profile Photo Avatar */}
+          <div className="flex justify-center mb-6">
+            <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-2 border-border/80 hover:border-primary/60 bg-card p-1 shadow-xl transition-colors duration-300">
+              <img 
+                src="/images/dhawal-profile.png" 
+                alt="Dhawal Deshmukh Profile" 
+                className="w-full h-full object-cover rounded-full hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
           <div className="space-y-6">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight floating-text glowing-text">
-              Hello, I'm Abdullah
+              Hello, I'm Dhawal Deshmukh
             </h1>
             <div className="text-2xl md:text-3xl font-mono text-primary floating-text-delayed">
-              AI / Full-Stack Developer
+              Data Science & Machine Learning Developer
             </div>
             <p className="text-xl leading-relaxed max-w-3xl mx-auto text-muted-foreground floating-text opacity-90">
-              Where complexity meets clarity: I ask the right questions and engineer innovative solutions that actually work
+              Building intelligent, data-driven solutions with Machine Learning, Predictive Analytics, and AI to turn complex data into measurable real-world impact.
             </p>
+
+            <div className="flex flex-wrap gap-4 justify-center items-center pt-4">
+              <a href="#projects">
+                <Button size="lg" className="gap-2 shadow-lg hover:scale-105 transition-transform">
+                  Explore Projects <ArrowRight className="w-4 h-4" />
+                </Button>
+              </a>
+              <Button size="lg" variant="outline" className="gap-2 hover:scale-105 transition-transform" onClick={handleResumeDownload}>
+                <Download className="w-4 h-4" /> Download Resume
+              </Button>
+              <a href="#contact">
+                <Button size="lg" variant="secondary" className="gap-2 hover:scale-105 transition-transform">
+                  <Mail className="w-4 h-4" /> Get in Touch
+                </Button>
+              </a>
+            </div>
+
+            {/* Impact Highlights Bar */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-10 border-t border-border/30 max-w-3xl mx-auto">
+              <div className="bg-card/50 backdrop-blur-sm p-4 rounded-xl border border-border/50 hover:border-primary/40 transition-colors">
+                <div className="text-3xl font-extrabold text-primary">2+</div>
+                <div className="text-sm font-medium text-foreground">Deployed ML & RAG Apps</div>
+                <div className="text-xs text-muted-foreground mt-0.5">Render & Cloud Hosted</div>
+              </div>
+              <div className="bg-card/50 backdrop-blur-sm p-4 rounded-xl border border-border/50 hover:border-primary/40 transition-colors">
+                <div className="text-3xl font-extrabold text-primary">4M+</div>
+                <div className="text-sm font-medium text-foreground">Organic Social Views</div>
+                <div className="text-xs text-muted-foreground mt-0.5">TEDx Media Strategy</div>
+              </div>
+              <div className="bg-card/50 backdrop-blur-sm p-4 rounded-xl border border-border/50 hover:border-primary/40 transition-colors">
+                <div className="text-3xl font-extrabold text-primary">300K+</div>
+                <div className="text-sm font-medium text-foreground">Account Audience Reach</div>
+                <div className="text-xs text-muted-foreground mt-0.5">3-Month Event Campaign</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

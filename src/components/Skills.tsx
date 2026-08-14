@@ -1,29 +1,29 @@
 
 import React from 'react';
-import { Terminal, Code, Database, Settings } from 'lucide-react';
+import { Code, Cloud, Cpu, BarChart3 } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 
 const Skills = () => {
   const skills = [
     { 
-      category: "Languages", 
-      items: ["JavaScript/TypeScript", "Python", "Java", "C", "Visual Basic .NET"],
+      category: "Languages & DBs", 
+      items: ["Python", "SQL", "MongoDB", "C++"],
       icon: <Code className="w-6 h-6" />
     },
     { 
-      category: "Backend & Cloud", 
-      items: ["Node.js", "Express.js", "MongoDB", "JWT Authentication", "RESTful APIs", "Stripe Integration"],
-      icon: <Database className="w-6 h-6" />
+      category: "Data Science & ML", 
+      items: ["Pandas", "NumPy", "Scikit-Learn", "TensorFlow", "Predictive Modeling", "Exploratory Data Analysis"],
+      icon: <Cpu className="w-6 h-6" />
     },
     { 
-      category: "Frontend & Mobile", 
-      items: ["React", "Next.js", "Vue.js", "Tailwind CSS", "Windows Forms", "Responsive Design"],
-      icon: <Terminal className="w-6 h-6" />
+      category: "AI & GenAI Systems", 
+      items: ["RAG Architecture", "LangChain", "LangGraph", "FAISS Vector Store", "LLM Integration (Groq)", "PII Anonymization"],
+      icon: <BarChart3 className="w-6 h-6" />
     },
     { 
-      category: "Data & AI", 
-      items: ["TensorFlow", "PyTorch", "Reinforcement Learning", "Neural Networks", "Algorithm Visualization"],
-      icon: <Database className="w-6 h-6" />
+      category: "Cloud, Backend & Analytics", 
+      items: ["AWS", "FastAPI", "Flask", "Power BI", "Excel", "Git & GitHub"],
+      icon: <Cloud className="w-6 h-6" />
     }
   ];
 

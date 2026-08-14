@@ -18,7 +18,7 @@ User-agent: LinkedInBot
 Allow: /
 
 # Sitemap
-Sitemap: https://abdullah-portfolio.dev/sitemap.xmloglebot
+Sitemap: /sitemap.xml
 Allow: /
 
 User-agent: Bingbot
