@@ -363,26 +363,6 @@ const Hero = () => {
                 <Button size="lg" variant="secondary" className="gap-2 hover:scale-105 transition-transform">
                   <Mail className="w-4 h-4" /> Get in Touch
                 </Button>
-              </a>
-            </div>
-
-            {/* Impact Highlights Bar */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-10 border-t border-border/30 max-w-3xl mx-auto">
-              <div className="bg-card/50 backdrop-blur-sm p-4 rounded-xl border border-border/50 hover:border-primary/40 transition-colors">
-                <div className="text-3xl font-extrabold text-primary">2+</div>
-                <div className="text-sm font-medium text-foreground">Deployed ML & RAG Apps</div>
-                <div className="text-xs text-muted-foreground mt-0.5">Render & Cloud Hosted</div>
-              </div>
-              <div className="bg-card/50 backdrop-blur-sm p-4 rounded-xl border border-border/50 hover:border-primary/40 transition-colors">
-                <div className="text-3xl font-extrabold text-primary">4M+</div>
-                <div className="text-sm font-medium text-foreground">Organic Social Views</div>
-                <div className="text-xs text-muted-foreground mt-0.5">TEDx Media Strategy</div>
-              </div>
-              <div className="bg-card/50 backdrop-blur-sm p-4 rounded-xl border border-border/50 hover:border-primary/40 transition-colors">
-                <div className="text-3xl font-extrabold text-primary">300K+</div>
-                <div className="text-sm font-medium text-foreground">Account Audience Reach</div>
-                <div className="text-xs text-muted-foreground mt-0.5">3-Month Event Campaign</div>
-              </div>
             </div>
           </div>
         </div>
