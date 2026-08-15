@@ -363,6 +363,7 @@ const Hero = () => {
                 <Button size="lg" variant="secondary" className="gap-2 hover:scale-105 transition-transform">
                   <Mail className="w-4 h-4" /> Get in Touch
                 </Button>
+              </a>
             </div>
           </div>
         </div>
