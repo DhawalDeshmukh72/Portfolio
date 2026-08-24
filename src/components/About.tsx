@@ -72,15 +72,6 @@ const About = () => {
               ))}
             </p>
 
-            {/* Hybrid Advantage Callout Box */}
-            <div className="p-6 rounded-2xl bg-gradient-to-r from-primary/10 via-purple-500/10 to-transparent border border-primary/20 backdrop-blur-sm">
-              <h3 className="text-xl font-bold text-foreground mb-2 flex items-center gap-2">
-                <span className="text-primary">⚡</span> The Hybrid Advantage
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Combining <strong>technical rigor in Machine Learning & AI</strong> with <strong>data-backed growth marketing</strong> allows me to build solutions that are not only technologically advanced, but also resonate deeply with users and achieve real-world reach.
-              </p>
-            </div>
           </div>
           <div className="flex flex-wrap gap-4 mt-10 justify-center items-center">
             {badges.map((badgeText, idx) => (

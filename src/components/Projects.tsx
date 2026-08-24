@@ -388,12 +388,12 @@ const Projects = () => {
       subtitle: "Machine Learning Resale Price Estimation System",
       images: [
         {
-          url: "/images/car-price-1.png",
-          caption: "Real-Time Resale Price Estimation Output"
-        },
-        {
           url: "/images/car-price-2.png",
           caption: "Interactive Vehicle Specification Input Form"
+        },
+        {
+          url: "/images/car-price-1.png",
+          caption: "Real-Time Resale Price Estimation Output"
         }
       ],
       description: "An end-to-end Machine Learning web application that predicts the expected resale price of used cars based on vehicle specifications such as brand, manufacturing year, fuel type, transmission, engine size, mileage, owner history, and insurance type.",
