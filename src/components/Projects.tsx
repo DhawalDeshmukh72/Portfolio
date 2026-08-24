@@ -368,10 +368,6 @@ const Projects = () => {
         {
           url: "/images/business-analyzer-1.png",
           caption: "Daily Executive Email Digest with Color-Coded Severity Metrics"
-        },
-        {
-          url: "/images/business-analyzer-2.png",
-          caption: "Detailed Business Analysis & LLM Anomaly Summaries"
         }
       ],
       description: "An autonomous business intelligence and reporting system designed for DhawalKart. The system runs an automated daily pipeline: generating realistic metric streams, running multi-period deterministic anomaly detection in pure Python, executing local LLM (Ollama) reasoning to write executive business highlights, and dispatching responsive styled HTML email digests.",
