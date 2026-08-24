@@ -17,8 +17,8 @@ const Navigation = () => {
     <nav className="sticky top-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <a href="#" className="text-2xl font-bold text-primary cursor-pointer hover:opacity-80 transition-opacity">
-            {'<Dhawal/>'}
+          <a href="#" className="text-2xl font-bold text-primary cursor-pointer hover:opacity-80 transition-opacity tracking-tight">
+            &lt;Dhawal<span className="text-primary/80 inline-block align-middle transform -translate-y-[1px]">/</span>&gt;
           </a>
           <div className="hidden md:flex space-x-8 text-sm font-medium">
             <a href="#about" className="hover:text-primary transition-colors">About</a>

@@ -362,6 +362,32 @@ const Projects = () => {
       github: "https://github.com/DhawalDeshmukh72/ContractLensDhawal.git"
     },
     {
+      title: "DhawalKart Business Analyst",
+      subtitle: "Autonomous E-Commerce Business Intelligence & LLM Reporting System",
+      images: [
+        {
+          url: "/images/business-analyzer-1.png",
+          caption: "Daily Executive Email Digest with Color-Coded Severity Metrics"
+        },
+        {
+          url: "/images/business-analyzer-2.png",
+          caption: "Detailed Business Analysis & LLM Anomaly Summaries"
+        }
+      ],
+      description: "An autonomous business intelligence and reporting system designed for DhawalKart. The system runs an automated daily pipeline: generating realistic metric streams, running multi-period deterministic anomaly detection in pure Python, executing local LLM (Ollama) reasoning to write executive business highlights, and dispatching responsive styled HTML email digests.",
+      highlights: [
+        "100% mathematically accurate metrics engine built in pure Python",
+        "Rule-based anomaly detection with dynamic severity classifications (±10% to ±30%)",
+        "Local LLM (Ollama) integration with offline fallback reasoning",
+        "Responsive, modern HTML email reports with severity status badges",
+        "Fully automated daily analysis run via GitHub Actions cron trigger",
+        "Dual-sync data storage persisting to SQLite databases and flat CSV files"
+      ],
+      tech: ["Python", "SQLite", "Ollama", "GitHub Actions", "SMTP", "CLI"],
+      demoUrl: "",
+      github: "https://github.com/DhawalDeshmukh72/Business_Analyzer"
+    },
+    {
       title: "Car Price Predictor",
       subtitle: "Machine Learning Resale Price Estimation System",
       images: [

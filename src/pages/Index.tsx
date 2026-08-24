@@ -23,8 +23,8 @@ const Index = () => {
       <footer className="py-12 border-t border-border">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <a href="#" className="text-2xl font-bold mb-4 md:mb-0 text-primary hover:opacity-80 transition-opacity">
-              {'<Dhawal/>'}
+            <a href="#" className="text-2xl font-bold mb-4 md:mb-0 text-primary hover:opacity-80 transition-opacity tracking-tight">
+              &lt;Dhawal<span className="text-primary/80 inline-block align-middle transform -translate-y-[1px]">/</span>&gt;
             </a>
             <div className="text-muted-foreground">
               © 2026 Dhawal Deshmukh. All rights reserved.

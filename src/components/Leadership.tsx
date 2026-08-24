@@ -78,13 +78,13 @@ const RoleCard = ({ role }: { role: LeadershipRole }) => {
         )}
 
         <CardContent className="p-8 space-y-6">
-          <div className="flex flex-wrap justify-between items-start gap-2 border-b border-border/40 pb-4">
+          <div className="flex flex-wrap justify-between items-start gap-2 border-b border-border/40 pb-4 min-h-[130px] md:min-h-[110px]">
             <div>
               <span className="text-xs font-mono uppercase tracking-wider text-primary font-semibold">Leadership Role</span>
               <h3 className="text-2xl font-bold text-foreground mt-1">{role.organization}</h3>
               <div className="text-primary font-medium">{role.role}</div>
             </div>
-            <Badge variant="outline" className="text-xs px-3 py-1 bg-primary/10 border-primary/30">
+            <Badge variant="outline" className="text-xs px-3 py-1 bg-primary/10 border-primary/30 shrink-0">
               {role.period}
             </Badge>
           </div>
