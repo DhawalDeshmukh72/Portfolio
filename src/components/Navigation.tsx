@@ -18,7 +18,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <a href="#" className="text-2xl font-bold text-primary cursor-pointer hover:opacity-80 transition-opacity tracking-tight">
-            &lt;Dhawal<span className="text-primary/80 inline-block align-middle transform -translate-y-[1px]">/</span>&gt;
+            Dhawal Deshmukh
           </a>
           <div className="hidden md:flex space-x-8 text-sm font-medium">
             <a href="#about" className="hover:text-primary transition-colors">About</a>
